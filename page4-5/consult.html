@@ -18,10 +18,10 @@
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> MY PROFILE</a>
+        <a href="C:/Users/Administrator/Desktop/Code/nhoangduong.github.com.git/index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="C:/Users/Administrator/Desktop/Code/nhoangduong.github.com.git/page2/profile.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> MY PROFILE</a>
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CONSULT</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#footerz" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
           <i class="fa fa-search"></i>
         </a>
@@ -29,9 +29,9 @@
 
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">MY PROFILE</a>
+        <a href="C:/Users/Administrator/Desktop/Code/nhoangduong.github.com.git/page2/profile.html" class="w3-bar-item w3-button" onclick="toggleFunction()">MY PROFILE</a>
         <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">CONSULT</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#footerz" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
       </div>
     </div>
@@ -119,14 +119,18 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                <h4 class="modal-title" id="myModalLabel">Online method</h4>
                               </div>
-                              <div class="modal-body">
-                                ...
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
                               </div>
                             </div>
                           </div>
@@ -144,14 +148,18 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                <h4 class="modal-title" id="myModalLabel">Offline method</h4>
                               </div>
-                              <div class="modal-body">
-                                ...
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
                               </div>
                             </div>
                           </div>
@@ -173,7 +181,82 @@
                Typical beer nerd. Incurable internet trailblazer. Explorer. Freelance twitter geek.
                Professional music trailblazer. Social media specialist. Food expert. Amateur introvert.
             </p>
-            <p><a class="btn btn-default" href="#" role="button">Book &raquo;</a></p>
+            <p><a class="btn btn-default" data-toggle="modal" data-target="#myModal">Book &raquo;</a></p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Confirm your book</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>First, choose your method to get advise from your consultant</p>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                          Online consulting
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Online method</h4>
+                              </div>
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+                          Offline consulting
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Offline method</h4>
+                              </div>
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="https://s-media-cache-ak0.pinimg.com/736x/56/b8/f3/56b8f3fe83b7e9cecccadcc8e5923765--nice-face-freckles.jpg" alt="Mrs C" width="140" height="140">
@@ -182,9 +265,97 @@
               Freelance music trailblazer. Internet lover. Webaholic.
               Communicator. Wannabe tv fan. Extreme twitter practitioner. Social media advocate. Coffee ninja. Friendly food fanatic.
             </p>
-            <p><a class="btn btn-default" href="#" role="button">Book &raquo;</a></p>
+            <p><a class="btn btn-default" data-toggle="modal" data-target="#myModal">Book &raquo;</a></p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Confirm your book</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>First, choose your method to get advise from your consultant</p>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                          Online consulting
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Online method</h4>
+                              </div>
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+                          Offline consulting
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Offline method</h4>
+                              </div>
+                              <div class="modal-body" align="left">
+                                <ul>
+                                  <li>Your consultant:</li>
+                                  <li>Date:</li>
+                                  <li>Your info:</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
+
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" id="footerz">
+      <a href="consult.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </footer>
+
   </body>
 </html>
